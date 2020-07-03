@@ -28,8 +28,9 @@ Features include
 [Here is the schematic](https://github.com/schlae/ClockInACan/blob/master/ClockInACan.pdf).
 
 Fab files can be found here:
-[ClockInACan fab files](https://github.com/schlae/ClockInACan/blob/master/fab/ClockInACanFab.zip)
-[ClockInAHalfCan fab files](https://github.com/schlae/ClockInAHalfCan/blob/master/fab/ClockInAHalfCanFab.zip)
+
+* [ClockInACan fab files](https://github.com/schlae/ClockInACan/blob/master/fab/ClockInACanFab.zip)
+* [ClockInAHalfCan fab files](https://github.com/schlae/ClockInACan/blob/master/fab/ClockInAHalfCanFab.zip)
 
 The basic bill of materials is below.
 
