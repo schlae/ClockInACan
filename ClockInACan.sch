@@ -1,0 +1,292 @@
+EESchema Schematic File Version 4
+LIBS:ClockInACan-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L misc_ic:NJU6311 U1
+U 1 1 5FBC670B
+P 5550 2900
+F 0 "U1" H 5550 3065 50  0000 C CNN
+F 1 "NJU6311" H 5550 2974 50  0000 C CNN
+F 2 "Active:SSOP50P400X100-10" H 5550 3000 50  0001 C CNN
+F 3 "" H 5550 3000 50  0001 C CNN
+F 4 "513-NJU6311RB2-TE1" H 5550 2900 50  0001 C CNN "Mouser"
+	1    5550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5FBC7A8F
+P 6050 3550
+F 0 "C1" H 6142 3596 50  0000 L CNN
+F 1 "0.1uF" H 6142 3505 50  0000 L CNN
+F 2 "Passive:CAPC1608X100" H 6050 3550 50  0001 C CNN
+F 3 "~" H 6050 3550 50  0001 C CNN
+	1    6050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R4
+U 1 1 5FBC80AF
+P 4950 3900
+F 0 "R4" V 5050 3900 50  0000 C CNN
+F 1 "TBD" V 5150 4000 50  0000 C CNN
+F 2 "Passive:RESC1608X55" H 4950 3900 50  0001 C CNN
+F 3 "~" H 4950 3900 50  0001 C CNN
+	1    4950 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 3900 5150 3900
+Wire Wire Line
+	5150 3500 4700 3500
+Wire Wire Line
+	4700 3500 4700 3600
+Wire Wire Line
+	4700 3800 4700 3900
+Wire Wire Line
+	4700 3900 4850 3900
+Wire Wire Line
+	4700 3500 4400 3500
+Wire Wire Line
+	4400 3500 4400 4000
+Connection ~ 4700 3500
+Wire Wire Line
+	4700 3900 4700 4000
+Connection ~ 4700 3900
+$Comp
+L Device:C_Small C2
+U 1 1 5FBC9613
+P 4700 4100
+F 0 "C2" H 4792 4146 50  0000 L CNN
+F 1 "TBD" H 4792 4055 50  0000 L CNN
+F 2 "Passive:CAPC1608X100" H 4700 4100 50  0001 C CNN
+F 3 "~" H 4700 4100 50  0001 C CNN
+	1    4700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5FBC9DE9
+P 4400 4100
+F 0 "C3" H 4492 4146 50  0000 L CNN
+F 1 "TBD" H 4492 4055 50  0000 L CNN
+F 2 "Passive:CAPC1608X100" H 4400 4100 50  0001 C CNN
+F 3 "~" H 4400 4100 50  0001 C CNN
+	1    4400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4250 4400 4200
+Wire Wire Line
+	4700 4250 4700 4200
+$Comp
+L Device:Crystal_Small Y1
+U 1 1 5FBCABD1
+P 4700 3700
+F 0 "Y1" V 4654 3788 50  0000 L CNN
+F 1 "XTAL" V 4745 3788 50  0000 L CNN
+F 2 "Passive:XTAL500X320_HYBRID" H 4700 3700 50  0001 C CNN
+F 3 "~" H 4700 3700 50  0001 C CNN
+	1    4700 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 4250 4700 4250
+Wire Wire Line
+	4700 4250 4700 4300
+Connection ~ 4700 4250
+$Comp
+L power:GND #PWR0101
+U 1 1 5FBCB32C
+P 4700 4300
+F 0 "#PWR0101" H 4700 4050 50  0001 C CNN
+F 1 "GND" H 4705 4127 50  0000 C CNN
+F 2 "" H 4700 4300 50  0001 C CNN
+F 3 "" H 4700 4300 50  0001 C CNN
+	1    4700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5FBCBA3A
+P 6050 4300
+F 0 "#PWR0102" H 6050 4050 50  0001 C CNN
+F 1 "GND" H 6055 4127 50  0000 C CNN
+F 2 "" H 6050 4300 50  0001 C CNN
+F 3 "" H 6050 4300 50  0001 C CNN
+	1    6050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0103
+U 1 1 5FBCC069
+P 6050 2250
+F 0 "#PWR0103" H 6050 2100 50  0001 C CNN
+F 1 "VCC" H 6067 2423 50  0000 C CNN
+F 2 "" H 6050 2250 50  0001 C CNN
+F 3 "" H 6050 2250 50  0001 C CNN
+	1    6050 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2250 6050 2650
+Wire Wire Line
+	6050 3000 5950 3000
+Wire Wire Line
+	5950 3900 6050 3900
+Wire Wire Line
+	6050 3900 6050 3950
+Wire Wire Line
+	6050 3650 6050 3900
+Connection ~ 6050 3900
+Wire Wire Line
+	6050 3450 6050 3000
+Connection ~ 6050 3000
+Wire Wire Line
+	5950 3300 6400 3300
+Wire Wire Line
+	5150 3000 3750 3000
+Wire Wire Line
+	5150 3100 4600 3100
+Wire Wire Line
+	5150 3200 4600 3200
+Wire Wire Line
+	4600 3300 5150 3300
+$Comp
+L Device:R_Small_US R3
+U 1 1 5FBCE949
+P 4500 3300
+F 0 "R3" V 4450 3150 50  0000 C CNN
+F 1 "TBD" V 4450 3450 50  0000 C CNN
+F 2 "Conn:JMP1608" H 4500 3300 50  0001 C CNN
+F 3 "~" H 4500 3300 50  0001 C CNN
+	1    4500 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 5FBCF1CB
+P 4500 3200
+F 0 "R2" V 4450 3050 50  0000 C CNN
+F 1 "TBD" V 4450 3350 50  0000 C CNN
+F 2 "Conn:JMP1608" H 4500 3200 50  0001 C CNN
+F 3 "~" H 4500 3200 50  0001 C CNN
+	1    4500 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 5FBCF39E
+P 4500 3100
+F 0 "R1" V 4450 2950 50  0000 C CNN
+F 1 "TBD" V 4450 3250 50  0000 C CNN
+F 2 "Conn:JMP1608" H 4500 3100 50  0001 C CNN
+F 3 "~" H 4500 3100 50  0001 C CNN
+	1    4500 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 3300 4100 3300
+Wire Wire Line
+	4400 3200 4100 3200
+Wire Wire Line
+	4100 3200 4100 3300
+Wire Wire Line
+	4400 3100 4100 3100
+Wire Wire Line
+	4100 3100 4100 3200
+Connection ~ 4100 3200
+Wire Wire Line
+	4100 3300 4100 3400
+Connection ~ 4100 3300
+$Comp
+L power:GND #PWR0104
+U 1 1 5FBD5FFB
+P 4100 3400
+F 0 "#PWR0104" H 4100 3150 50  0001 C CNN
+F 1 "GND" H 4105 3227 50  0000 C CNN
+F 2 "" H 4100 3400 50  0001 C CNN
+F 3 "" H 4100 3400 50  0001 C CNN
+	1    4100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J1
+U 1 1 5FBD6A80
+P 3550 3000
+F 0 "J1" H 3658 3181 50  0000 C CNN
+F 1 "EN" H 3658 3090 50  0000 C CNN
+F 2 "Conn:MILL-MAX_0542-0-00-15-00-00-03-0" H 3550 3000 50  0001 C CNN
+F 3 "~" H 3550 3000 50  0001 C CNN
+F 4 "575-0542000150000" H 3550 3000 50  0001 C CNN "Mouser"
+	1    3550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J7
+U 1 1 5FBD7862
+P 6600 3950
+F 0 "J7" H 6572 3882 50  0000 R CNN
+F 1 "GND" H 6572 3973 50  0000 R CNN
+F 2 "Conn:MILL-MAX_0542-0-00-15-00-00-03-0" H 6600 3950 50  0001 C CNN
+F 3 "~" H 6600 3950 50  0001 C CNN
+F 4 "575-0542000150000" H 6600 3950 50  0001 C CNN "Mouser"
+	1    6600 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 3950 6050 3950
+Connection ~ 6050 3950
+Wire Wire Line
+	6050 3950 6050 4300
+$Comp
+L Connector:Conn_01x01_Male J8
+U 1 1 5FBD9303
+P 6600 3300
+F 0 "J8" H 6572 3232 50  0000 R CNN
+F 1 "OUT" H 6572 3323 50  0000 R CNN
+F 2 "Conn:MILL-MAX_0542-0-00-15-00-00-03-0" H 6600 3300 50  0001 C CNN
+F 3 "~" H 6600 3300 50  0001 C CNN
+F 4 "575-0542000150000" H 6600 3300 50  0001 C CNN "Mouser"
+	1    6600 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J14
+U 1 1 5FBD97DC
+P 6600 2650
+F 0 "J14" H 6572 2582 50  0000 R CNN
+F 1 "VDD" H 6572 2673 50  0000 R CNN
+F 2 "Conn:MILL-MAX_0542-0-00-15-00-00-03-0" H 6600 2650 50  0001 C CNN
+F 3 "~" H 6600 2650 50  0001 C CNN
+F 4 "575-0542000150000" H 6600 2650 50  0001 C CNN "Mouser"
+	1    6600 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 2650 6050 2650
+Connection ~ 6050 2650
+Wire Wire Line
+	6050 2650 6050 3000
+Text Notes 2900 4450 0    50   ~ 0
+R1, R2, R3 - Divider Ratio\nO   O   O - 1\nS   O   O - /2\nO   S   O - /4\nS   S   O - /8\nO   O   S - /16\nS   O   S - /32\n
+Text Notes 7100 7000 0    50   ~ 0
+By @TubeTimeUS
+Text Notes 7100 6800 0    100  ~ 20
+Clock In A Can
+Text Notes 9050 7100 0    50   ~ 0
+This work is licensed under the Creative Commons\nAttribution-ShareAlike 4.0 International License.\nTo view a copy of this license, visit \nhttp://creativecommons.org/licenses/by-sa/4.0/\nor send a letter to Creative Commons, PO Box 1866,\nMountain View, CA 94042, USA.
+$EndSCHEMATC
